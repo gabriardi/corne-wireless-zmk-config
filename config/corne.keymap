@@ -40,7 +40,14 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        shift+cmd+r {
+            bindings = <&kp LS(LG(R))>;
+            key-positions = <17 5>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
