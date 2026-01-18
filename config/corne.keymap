@@ -105,7 +105,7 @@
 &trans  &trans     &trans     &trans     &trans      &trans    &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp BSPC  &kp DEL
 &trans  &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHIFT  &trans    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans
 &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)   &trans    &trans     &trans    &trans    &trans     &trans    &trans
-                              &trans     &trans      &trans    &trans     &trans    &trans
+                              &trans     &trans      &trans    &trans     &mo 3     &mo 4
             >;
         };
 
@@ -163,7 +163,7 @@
         compatible = "zmk,conditional-layers";
 
         Sys {
-            if-layers = <1 4>;
+            if-layers = <2 3>;
             then-layer = <5>;
         };
 
